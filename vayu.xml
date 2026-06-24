@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="ax" fetch="https://github.com/AxionAOSP-devices" />
+    <remote name="za" fetch="https://github.com/Zarathos30/" />
+    <remote name="metonator_github" fetch="https://github.com/Zarathos30"/>
+
+    <!-- AxionOS common forks -->
+    <remove-project name="android_frameworks_base" />
+    <project path="frameworks/base" name="android_frameworks_base" remote="za" revision="axion-2.7" />
+
+    <remove-project name="android_packages_apps_AxionParts" />
+    <project path="packages/apps/AxionParts" name="android_packages_apps_AxionParts" remote="za" revision="axion-2.7" />
+
+    <remove-project path="system/core" />
+    <project path="system/core" name="android_system_core" remote="za" revision="lineage-23.2" />
+
+    <remove-project path="axion_sdk" />
+    <project path="axion_sdk" name="android_axion_sdk" remote="za" revision="lineage-23.2" />
+
+    <remove-project path="packages/apps/VendorSupport" />
+    <project path="packages/apps/VendorSupport" name="android_packages_apps_VendorSupport" remote="za" revision="lineage-23.2" />
+
+    <remove-project path="vendor/lineage" />
+    <project path="vendor/lineage" name="android_vendor_lineage" remote="za" revision="lineage-23.2" />
+
+    <!-- Xiaomi Hardware -->
+    <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="ax" revision="lineage-23.2" />
+
+    <!-- POCO X3 Pro (vayu) Trees -->
+    <project remote="metonator_github" revision="lineage-23.2" name="android_device_xiaomi_vayu"                path="device/xiaomi/vayu" />
+    <project remote="metonator_github" revision="lineage-23.2" name="android_kernel_xiaomi_sm8150"              path="kernel/xiaomi/sm8150" />
+    <project remote="metonator_github" revision="lineage-23.2" name="proprietary_vendor_xiaomi_vayu"            path="vendor/xiaomi/vayu" />
+    <project remote="metonator_github" revision="lineage-23.2" name="proprietary_vendor_xiaomi_sm8150-common"   path="vendor/xiaomi/sm8150-common" />
+    <project remote="metonator_github" revision="lineage-23.2" name="android_device_xiaomi_sm8150-common"       path="device/xiaomi/sm8150-common" />
+
+    <!-- MiuiCamera -->
+    <project remote="metonator_github" revision="lineage-23.2" name="proprietary_vendor_xiaomi_camera"          path="vendor/xiaomi/camera" />
+
+    <!-- XiaomiDolby -->
+    <project remote="metonator_github" revision="lineage-23.2" name="packages_apps_XiaomiDolby"                 path="packages/apps/XiaomiDolby" />
+</manifest>
