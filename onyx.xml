@@ -2,7 +2,8 @@
 <manifest>
 
     <remote name="ax" fetch="https://github.com/AxionAOSP-devices" />
-
+    <remote name="za" fetch="https://github.com/Zarathos30" />   
+ 
     <!-- Device -->
     <project path="device/xiaomi/onyx" name="android_device_xiaomi_onyx" remote="ax" revision="axion" />
 
@@ -23,4 +24,8 @@
 
      <!-- NotGameTurbo -->
     <project path="packages/apps/NotGameTurbo" name="android_packages_apps_NotGameTurbo" remote="ax" revision="lineage-23.2" />	
+     
+    <!-- Vendor Lineage -->    
+    <remove-project name="android_vendor_lineage" />
+    <project path="vendor/lineage" name="android_vendor_lineage" remote="za" revision="lineage-23.2" />
 </manifest>
